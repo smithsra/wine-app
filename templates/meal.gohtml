@@ -1,0 +1,49 @@
+<!doctype html>
+<title>Wine Pairing</title>
+<style>
+  body {
+      /* The image used */
+    background-image: url("../images/wine.jpg");
+    /* Full height */
+    background-size: auto 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .main-nav {
+    display: flex;
+    background: #819ca3;
+    color: white;
+    border-radius: 3px;
+    padding: 1em;
+    font-family: sans-serif;
+  }
+  .main-nav > form {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  .main-nav input {
+    flex: 1;
+    font-size: 2rem;
+  }
+  .main-nav button {
+    background: white;
+    border: 0;
+    border-radius: 1em;
+    color: grey;
+    padding: 0 1em;
+    margin-left: .3em;
+    font-size: 1.5rem;
+  }
+
+</style>
+<body>
+<nav class="main-nav">
+  <form method="post" action="/matchwine/process">
+    <input type="text" name="Meal or cuisine" placeholder="Enter meal or cuisine type" required>
+    <button>Go</button>
+  </form>
+</nav>
+<body>

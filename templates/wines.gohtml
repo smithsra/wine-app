@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matched Wines</title>
+    <style>
+        html, body, p {
+            padding: 0;
+            border: 10;
+            margin: 10;
+        }
+        body {
+        /* The image used */
+            background-image: url("../images/wine.jpg");
+          /* Full height */
+            background-size: auto;
+          /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: left;
+        }
+        p, h4 {
+            margin-left: 4rem;
+            margin-right: 4rem;
+            background: #819ca3;
+            color: black;
+            border-radius: 3px;
+            padding: 1em;
+            font-family: sans-serif;
+            opacity: 0.8;
+        }
+        a.link:link {
+            font-size: 1rem;
+            text-decoration: none;
+            color: black;
+        }
+        a.link:visited {
+            font-size: 1rem;
+            text-decoration: none;
+            color: black;
+        }
+        a.link:hover {
+            font-size: 1rem;
+            text-decoration: underline;
+            color: black;
+        }
+        {{/* .bg {
+
+        } */}}
+    </style>
+</head>
+<body>
+<h4>{{.PairingText}}</h4>
+<h4>Suggested wine types: <br>
+{{range .PairedWines}}
+<ul>{{.}}</ul>
+{{end}}</h4>
+<h4>Suggested bottles: <br>
+{{range .ProductMatches}}
+<ul>{{.Title}}</ul>
+{{end}}</h4>
+<p><a class="link" href="/matchwine">Find another wine</a></p>
+
+</body>
+</html>
