@@ -1,27 +1,27 @@
 .c1 {
     color: #fff;
-    background-color: black;
-    min-height: 700px;
+    background-color: #000d0b;
+    min-height: 40vh;
     background-image: url("../../images/footer.jpg");
     background-size: auto 100%;
-    background-position:top;
+    background-position:center;
     background-repeat: no-repeat;
     background-size:contain;
 }
 
 .c2 {
     color: #fff;
-    min-height: 550px;
+    min-height: 30vh;
     background-color:#32000e;
 }
 
 .c3 {
     color:slategrey;
-    min-height: 150px;
+    min-height: 20vh;
     background-color: #25020d;
     
 }
 
-/* .c4 {
+.c4 {
     box-sizing: border-box;
-} */
+}
