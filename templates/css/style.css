@@ -17,10 +17,11 @@
 
 .c3 {
     color:slategrey;
+    min-height: 150px;
     background-color: #25020d;
     
 }
 
-.c4 {
+/* .c4 {
     box-sizing: border-box;
-}
+} */
