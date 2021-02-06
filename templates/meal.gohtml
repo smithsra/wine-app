@@ -1,49 +1,33 @@
 <!doctype html>
-<title>Wine Pairing</title>
-<style>
-  body {
-      /* The image used */
-    background-image: url("../images/wine.jpg");
-    /* Full height */
-    background-size: auto 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  .main-nav {
-    display: flex;
-    background: #819ca3;
-    color: white;
-    border-radius: 3px;
-    padding: 1em;
-    font-family: sans-serif;
-  }
-  .main-nav > form {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-  .main-nav input {
-    flex: 1;
-    font-size: 2rem;
-  }
-  .main-nav button {
-    background: white;
-    border: 0;
-    border-radius: 1em;
-    color: grey;
-    padding: 0 1em;
-    margin-left: .3em;
-    font-size: 1.5rem;
-  }
-
-</style>
+<head>
+    <meta charset="utf-8">
+    <title>Wine Pairing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mcleod-reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/mq-600-plus.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="/css/mq-800-plus.css" media="(min-width: 800px)"> -->
+</head>
 <body>
-<nav class="main-nav">
+  <header class="c1">
+    <h1>Welcome to the Wine Pairing App</h1>
+  </header>
+<div class="c4">
+<main class="c2">
+  <div>
+  <h2>This app will help you find the ideal wine for your meal. Fill in the form below to find your perfect wine.</h2>
+  <h2>For example, try steak or mexican.</h2>
+</div>
   <form method="post" action="/matchwine/process">
     <input type="text" name="Meal or cuisine" placeholder="Enter meal or cuisine type" required>
     <button>Go</button>
   </form>
-</nav>
+</main>
+<footer class="c3">
+  <h2>Powered by Golang and the Spoonacular API</h2>
+  <h2><span>Photo by <a href="https://unsplash.com/@roadtripwithraj?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Road Trip with Raj</a> on <a href="https://unsplash.com/s/photos/wine?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></h2>
+</footer>
+</div>
 <body>

@@ -14,6 +14,7 @@ func main() {
 	http.HandleFunc("/matchwine/process", handlers.MatchWineProcess)
 	http.HandleFunc("/wine.jpg", handlers.WinePic)
 	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
+	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("templates/css/"))))
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
