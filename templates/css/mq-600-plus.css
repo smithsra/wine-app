@@ -4,6 +4,7 @@
     background-size: auto 35%;
     background-repeat:repeat-y;
     background-size:contain;
+    background-attachment: local;
 }
 
 .c4 {

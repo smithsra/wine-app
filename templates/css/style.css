@@ -4,20 +4,21 @@
     min-height: 40vh;
     background-image: url("../../images/footer.jpg");
     background-size: auto 100%;
-    background-position:center;
+    background-position:top;
     background-repeat: no-repeat;
     background-size:contain;
+    background-attachment: fixed;
 }
 
 .c2 {
     color: #fff;
-    min-height: 40vh;
+    min-height: 45vh;
     background-color:#32000e;
 }
 
 .c3 {
     color:slategrey;
-    min-height: 20vh;
+    min-height: 15vh;
     background-color: #25020d;
     
 }
